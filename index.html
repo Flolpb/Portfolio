@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="children" id="presentation">
+        <img src="images/logo.png" alt="background" class="logo">
+        <div class="presentation">
+            <div class="titre">Présentation</div>
+            <div class="under"></div>
+            <div class="contenu">Je m'appelle Florent Chabin. Je suis né le 08 décembre 2001 à Saint Nazaire. Je loge actuellement à Nantes.
+                Je suis un étudiant en première année d'informatique à l'école 
+                <a href="https://www.campus.academy/" target="_blank">Campus Academy</a>
+                . Je suis un joueur de Basketball qui joue en U20M R2 au club de 
+                <a href="http://club.quomodo.com/us-basket-frossay-st-viaud" target="_blank">Frossay Saint-Viaud</a>
+                . Je suis quelqu'un de très curieux qui aime bien toucher à tout.</div>
+        </div>
+    </div>
+
+
+
+    <div class="children" id="portfolio">
+        <div class="contenu-portfolio">
+            <div class="titre">Portfolio</div>
+            <div class="under"></div>
+            <div class="slider">
+                <div class="projet" id="un">
+                    <div class="couverture">Nom Projet 01
+                        <div class="description">Courte description du projet</div>
+                        <a href="projet01.html">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="projet" id="deux">
+                    <div class="couverture">Nom Projet 02
+                        <div class="description">Courte description du projet</div>
+                        <a href="projet02.html">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="projet" id="trois">
+                    <div class="couverture">Nom Projet 03
+                        <div class="description">Courte description du projet</div>
+                        <a href="projet03.html">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="children" id="curriculum">
+        <div class="contenu-curriculum">
+            <div class="titre">Curriculum Vitae</div>
+            <div class="under"></div>
+            <div class="infos-curriculum">
+                <div class="competences">
+                    <div class="sous-titre">Mes compétences</div>
+                    <div class="under"></div>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                        <li>REACT</li>
+                        <li>MYSQL</li>
+                        <li>PHP</li>
+                        <li>PYTHON</li>
+                    </ul>
+                </div>
+                <div class="situation">
+                    <div class="sous-titre">Ma situation professionelle actuelle</div>
+                    <div class="under"></div>
+                    <div class="contenu-situation">Je suis actuellement à la recherche d'un stage et d'une alternance dans le développement.
+                         Le stage se passerait du 13 mai au 28 août. L'alternance commencerait en septembre prochain.
+                    </div>
+                </div>
+            </div>
+            <a href="pdf/CHABIN-Florent.pdf" target="_blank">PDF</a>
+
+        </div>
+
+    </div>
+    <div class="children" id="contact">
+        <div class="contenu-contact">
+            <div class="titre">Me Contacter</div>
+            <div class="under"></div>
+            <div class="input">
+                <label for="name">Nom Prénom</label><br />
+                <input type="text" id="name" name="name" required
+                minlength="4" maxlength="40" size="20" placeholder="Nom Prénom"><br />
+                <label for="mail">Mail</label><br />
+                <input type="email" id="mail" name="mail" required
+                minlength="4" maxlength="30" size="30" placeholder="mail@exemple.com"><br />
+                <label for="message">Message</label><br />
+                <textarea name="message" id="textArea" class="form-control" cols="30" rows="10" style="font-size: 12px;" maxlength="250" placeholder="Veuillez écrire votre message ici"></textarea>
+                <br />
+                <button class="submit">Envoyer</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    <footer class="children" id="footer">
+        <div class="mention-legal">
+            <div>@2019 - Mentions Légales</div>
+            <div>Copyright Chabin Florent</div>
+        </div>
+        <a class="retour" href="#presentation">Retour en haut de la page</a>
+
+
+    </footer>
+</body>
+</html>
