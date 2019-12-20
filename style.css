@@ -36,7 +36,7 @@ li{
   background: rgba(255,255,255, 0.8);
   text-align: center;
   margin: auto;
-  width: 50%;
+  width: 80rem;
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
@@ -53,7 +53,7 @@ li{
   }
 .under{
     border-bottom: steelblue 0.3rem solid;
-    width: 20rem;
+    width: 40%;
     margin: auto;
     margin-bottom: 3rem;
 }
@@ -82,9 +82,7 @@ li{
     background: rgba(255,255,255, 0.8);
     text-align: center;
     margin: auto;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+    width: 80%;
     font-size: 1.5rem;
     padding: 1rem 1rem 1rem 1rem;
     border: 2px steelblue solid;
@@ -102,7 +100,6 @@ li{
 .slider{
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: flex;
     justify-content: space-around;
     margin: 2rem 0rem 5rem 0rem;
@@ -216,6 +213,7 @@ li{
     border: 2px steelblue solid;
     border-radius: 10%;
     position: relative;
+    flex-wrap: wrap;
 }
 
 
@@ -223,24 +221,24 @@ li{
 
 .infos-curriculum{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .infos-curriculum .under{
     border-bottom: black 0.2rem solid;
-    width: 20rem;
+    width: 30%;
     margin: auto;
     margin-bottom: 3rem;
 }
 
 .sous-titre{
-    font-size:2rem;
+    font-size:1.8rem;
+    display:flex;
     margin: auto;
     margin-bottom: 2rem;
     margin-top: 1rem;
-    width: 25rem;
     text-align: center;
     color: white;
 }
@@ -249,6 +247,7 @@ li{
     margin: auto;
     margin-top: 2rem;
     display: flex;
+    width: 40%;
     flex-direction: column;
     background: steelblue;
     border: 2px solid black;
@@ -268,14 +267,15 @@ li{
 .situation{
     margin: auto;
     display: flex;
+    width: 40%;
     flex-direction: column;
     background: steelblue;
-    width: 30rem;
     color: white;
     border: 2px solid black;
 }
 
 .contenu-situation{
+    font-size: 1rem;
     padding: 0 2rem 2rem 2rem;
     text-align: justify;
 }
@@ -331,7 +331,7 @@ li{
   
   #footer{
     background: steelblue;
-    height: 15rem;
+    height: 12rem;
     color: white;
     font-size: 1.5rem;
     text-align: center;
@@ -370,3 +370,72 @@ li{
     color: black;
     transition: 1s;
 }
+
+
+
+@media screen and (max-width: 1024px) {
+    .sous-titre{
+        font-size: 1rem;
+    }
+    .contenu-curriculum {
+        width: 70%;
+    }
+    .competences li{
+        font-size: 1.2rem;
+        text-align: center;
+        margin-right: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 512px) {
+    .sous-titre{
+        font-size: 0.9rem;
+        margin-bottom: 0.1rem;
+    }
+    .contenu-curriculum {
+        width: 90%;
+    }
+    .competences li{
+        font-size: 1rem;
+        text-align: center;
+        margin-right: 3rem;
+    }
+    .titre{
+        font-size: 1.2rem;
+    }
+    .input{
+        font-size: 1rem;
+    }
+    .input input{
+        font-size: 0.5rem;
+    }
+    .input textarea{
+        font-size: 0.5rem;
+    }
+    .situation{
+        width: 90%;
+    }
+    .contenu-situation{
+        font-size: 0.7rem;
+    }
+    .competences{
+        width: 90%;
+    }
+    .competences li{
+        font-size: 0.7rem;
+    }
+    .presentation{
+        width: 80%;
+        font-size: 1rem;
+      }
+      .contenu-curriculum{
+        padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    }
+    .under{
+        margin-bottom: 0rem;
+    }
+    .infos-curriculum .under {
+        margin-bottom: 2rem;
+    }
+
+  }
