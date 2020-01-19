@@ -9,7 +9,11 @@ html { /* body won't work ¯\_(ツ)_/¯ */
 li{
     list-style: none;
 }
-  
+
+.size-a{
+    font-size: 0.2vh;
+}
+
 .children{
     height: 100vh;
     scroll-snap-align: start;
@@ -105,7 +109,7 @@ li{
     margin: 2rem 0rem 5rem 0rem;
   }
   .slider a{
-    height: 10%;
+    height: 15%;
     margin: auto;
     margin-left: 2rem;
     margin-right: 2rem;
